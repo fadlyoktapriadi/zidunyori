@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <title>Wedding Invitation</title>
+</head>
+
+<body class="overflow-x-hidden font-dancing-script">
+    <!-- AWAL JUMBOTRON -->
+    <header class="text-white mb-14">
+        <div class="w-full pt-20 pb-10 bg-primary text-center">
+            <img src="./assets/img/daun.png" class="mx-auto w-40 mb-4">
+            <h1 class="font-medium md:text-3xl text-2xl mb-8">Undangan Pernikahan</h1>
+            <h1 class="nama font-bold md:text-7xl text-5xl mb-8">Zidun & Yori</h1>
+            <h1 class="font-medium md:text-3xl text-2xl">Kamis, 30 September 2021</h1>
+        </div>
+        <img src="./assets/img/wavi.png" class="w-full bg-no-repeat bg-cover">
+    </header>
+    <!-- AKHIR JUMBOTRON -->
+
+    <!-- AWAL KONTEN -->
+    <section>
+
+        <div class="w-2/3 mx-auto text-center md:text-2xl text-xl mb-20">
+            <p><span class="font-bold">Maha Suci Allah SWT</span><br>
+                yang telah menciptakan makhlukNya berpasang-pasangan.
+                Ya Allah, perkenankanlah dan Ridhoilah putra-putri kami :
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 justify-items-center w-2/3 mx-auto">
+
+            <div class="card-cowok bg-primary w-56 h-72 transform -rotate-12 rounded-lg md:mb-0 mb-20">
+                <div class="card-overlay bg-white shadow-2xl w-56 h-72 transform rotate-12 rounded-lg p-3">
+                    <div class="card-body font-poppins text-center">
+                        <img src="./assets/img/zid.png" class="rounded-full w-32 h-32 mx-auto">
+                        <p class="font-dancing-script text-2xl font-bold mt-3">Zidun Nofandrian</p>
+                        <p class="text-sm mt-3">Anak dari</p>
+                        <p class="text-sm">Bpk. Sano Manjiro & Ibu Yuuki Asuna</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cowok bg-primary w-56 h-72 transform -rotate-12 rounded-lg">
+                <div class="card-overlay bg-white shadow-2xl w-56 h-72 transform rotate-12 rounded-lg p-3">
+                    <div class="card-body font-poppins text-center">
+                        <img src="./assets/img/yor.png" class="rounded-full w-32 h-32 mx-auto">
+                        <p class="font-dancing-script text-2xl font-bold mt-3">Aurel Mayori Putri</p>
+                        <p class="text-sm mt-3">Anak dari</p>
+                        <p class="text-sm">Bpk. Hendro Suherman & Ibu Sri Mulyawati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-2/3 mx-auto mt-20 text-center md:text-2xl text-xl mb-20">
+            <p>Untuk Melaksanakan Syari’at Agama-Mu, Mengikuti Sunnah-Mu
+                dalam membentuk keluarga yang Sakinah, Mawaddah Wa Rohmah.
+                Maka Izinkanlah kami menikahkannya.
+            </p>
+        </div>
+    </section>
+
+    <!-- AKHIR KONTEN -->
+
+    <div class="line w-2/3 h-1 bg-primary mx-auto mt-16 rounded-sm"></div>
+
+    <!-- AWAL RESESPSI -->
+
+    <section>
+        <div class="text-center mt-16 md:text-3xl text-2xl">
+            <h1>Resepsi Akad Nikah</h1>
+        </div>
+
+        <img src="./assets/img/rumah.png" alt="" class="w-20 mx-auto my-5">
+        <div class="text-center mx-auto md:text-lg text-md">
+            <p>Kp. Beijing, RT.02 RW. 07, Kel. Keraton,<br>
+                Kec. Majasari, Kab. Pandeglang, Banten</p>
+        </div>
+
+        <div
+            class="md:mt-12 mt-7 grid md:grid-cols-2 grid-cols-1 justify-items-center w-2/3 mx-auto place-items-center md:text-lg text-md">
+
+            <div class="kalender mb-7">
+                <img src="./assets/img/kalender.png" class="w-20 mx-auto mb-5">
+                <p>Kamis, 30 September 2021</p>
+            </div>
+
+            <div class="jam">
+                <img src="./assets/img/jam.png" class="w-20 mx-auto mb-5">
+                <p>Pukul 08.00 s.d Selesai</p>
+            </div>
+
+        </div>
+
+        <div class="text-center my-12 md:text-3xl text-2xl">
+            <h1>Hitung Mundur Acara</h1>
+        </div>
+
+        <div class="grid md:grid-cols-4 grid-cols-2 justify-items-center w-1/2 mx-auto place-items-center">
+
+            <div class="card">
+                <div class="w-20 h-20 bg-primary rounded-lg text-center grid place-items-center">
+                    <h1 class="text-white text-2xl" id="hari"></h1>
+                </div>
+                <p class="text-2xl mt-2 text-center">Hari</p>
+            </div>
+
+            <div class="card">
+                <div class="w-20 h-20 bg-primary rounded-lg text-center grid place-items-center">
+                    <h1 class="text-white text-2xl" id="jam"></h1>
+                </div>
+                <p class="text-2xl mt-2 text-center">Jam</p>
+            </div>
+
+            <div class="card">
+                <div class="w-20 h-20 bg-primary rounded-lg text-center grid place-items-center">
+                    <h1 class="text-white text-2xl" id="menit"></h1>
+                </div>
+                <p class="text-2xl mt-2 text-center">Menit</p>
+            </div>
+
+            <div class="card">
+                <div class="w-20 h-20 bg-primary rounded-lg text-center grid place-items-center">
+                    <h1 class="text-white text-2xl" id="detik"></h1>
+                </div>
+                <p class="text-2xl mt-2 text-center">Detik</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-2/3 h-1 bg-primary mx-auto mt-16 rounded-sm"></div>
+
+    <section class="doa">
+        <div class="judul text-center mt-10 md:text-3xl text-2xl">
+            <h1>Do'a Kami</h1>
+        </div>
+
+        <div class="text-center w-2/3 mx-auto text-xl mt-5">
+            "Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu
+            merasa
+            nyaman kepadanya, dan dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang demikian itu
+            benar-benar terdapat tanda-tanda bagi kaum yang berpikir" <br><br>
+            - Al-Qur’an Surat : AR-RUM Ayat 21 -
+        </div>
+    </section>
+
+    <div class="w-2/3 h-1 bg-primary mx-auto mt-16 rounded-sm"></div>
+
+    <section class="maps mb-20">
+        <div class="judul text-center mt-12 md:text-3xl text-2xl mb-8">
+            <h1>Maps</h1>
+        </div>
+
+        <div class="mx-auto border-primary grid justify-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1464.1263996241005!2d106.0950504832585!3d-6.31578732522605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e422331209e9ac9%3A0x4a097ca0819af28!2sMasjid%20Beunying!5e0!3m2!1sid!2sid!4v1622520189925!5m2!1sid!2sid"
+                height="350" allowfullscreen="" loading="lazy" class="md:w-96">
+            </iframe>
+        </div>
+
+    </section>
+    </div>
+
+    <footer class="w-screen h-10 font-poppins text-center text-white bg-primary leading-10">
+        2021 © created : Fadly Oktapriadi <span class="text-red-500">❤</span>
+    </footer>
+</body>
+
+<script src="./assets/js/script.js"></script>
+
+</html>
